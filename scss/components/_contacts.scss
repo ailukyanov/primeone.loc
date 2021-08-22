@@ -1,0 +1,126 @@
+.contacts {
+  padding: 80px 0 0 0;
+
+  @media (max-width:$md2+px) {
+    padding: 30px 0 0 0;
+  }
+
+  &-top {
+  }
+
+  &__title {
+    font-family: "AkzidenzGroteskBQCondensedBold", sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin: 0 0 30px 0;
+  }
+
+  &-body {
+    @include flexbox();
+    flex-wrap: wrap;
+
+    &__column {
+      flex: 0 0 50%;
+      margin: 0 0 20px 0;
+
+      @media (max-width:$md2+px) {
+        flex: 1 1 100%;
+      }
+    }
+
+    &__item {
+      font-size: 15px;
+      color: #000;
+      display: inline-block;
+      line-height: 27px;
+      padding: 0 0 0 35px;
+
+      &--1 {
+        background: url("../img/svg/contacts/01.svg") left no-repeat;
+      }
+
+      &--2 {
+        background: url("../img/svg/contacts/02.svg") left no-repeat;
+      }
+
+      &--3 {
+        background: url("../img/svg/contacts/03.svg") left no-repeat;
+      }
+    }
+  }
+
+  &-social {
+    @include flexbox();
+
+    &__item {
+      margin: 0 30px 0 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &-content {
+    @include flexbox();
+    background-color: #000;
+
+    @media (max-width:$md2+px) {
+      display: block;
+    }
+
+    &__column {
+      flex: 0 0 50%;
+    }
+
+    &__map {
+      height: 100%;
+
+      @media (max-width:$md2+px) {
+        height: 300px;
+      }
+    }
+
+    &-form {
+      padding: 55px 60px;
+
+      @media (max-width:$md2+px) {
+        padding: 30px;
+      }
+
+      &__title {
+        font-family: "AkzidenzGroteskBQCondensedBold", sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 5px;
+        margin: 0 0 30px 0;
+      }
+
+      &-body {
+        max-width: 375px;
+
+        @media (max-width:$md2+px) {
+          max-width: none;
+        }
+
+        .input {
+          border-radius: 0 !important;
+          width: 100%;
+          display: block;
+          padding: 0 18px;
+          height: 50px;
+          border: 2px solid #959595;
+          background-color: #252525;
+          color: #959595;
+          font-size: 15px;
+        }
+      }
+
+      &-line {
+        margin: 0 0 25px 0;
+      }
+    }
+  }
+}
