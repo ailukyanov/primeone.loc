@@ -153,7 +153,33 @@ img {
   vertical-align: top;
 }
 
-.wrapper {
-  max-width: 880px;
-  margin: 0 auto;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
 }
+
+/*WRAPPER*/
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  &.loaded{}
+}
+
+/*MAIN GRID*/
+.container {
+  max-width: $mw+px;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (max-width: $md1+px) {
+    max-width: 750px;
+  }
+
+  @media (max-width: $md2+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
