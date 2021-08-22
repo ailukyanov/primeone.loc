@@ -869,6 +869,15 @@ header {
        -moz-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
+    @media (max-width: 892px) {
+      .why-top__column {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 100%;
+           -moz-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%; }
+        .why-top__column:last-child {
+          display: none; } }
   .why-top__text {
     color: #ffffff;
     text-align: right;
@@ -878,12 +887,25 @@ header {
     text-transform: uppercase;
     letter-spacing: 5px;
     padding: 50px 60px 50px 0; }
+    @media (max-width: 892px) {
+      .why-top__text {
+        padding: 30px 0;
+        font-size: 40px;
+        text-align: center; } }
+    @media (max-width: 767.98px) {
+      .why-top__text {
+        padding: 20px 0;
+        font-size: 30px;
+        text-align: center; } }
   .why-top__image {
     height: 100%; }
 
 .why-body {
   padding: 50px 0 0 0;
   background-color: #ebebeb; }
+  @media (max-width: 479.98px) {
+    .why-body {
+      padding: 30px 0 0 0; } }
   .why-body-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -901,6 +923,16 @@ header {
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
     margin: 0 0 50px 0; }
+    @media (max-width: 892px) {
+      .why-body__column {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 100%;
+           -moz-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%; } }
+    @media (max-width: 479.98px) {
+      .why-body__column {
+        margin: 0 0 30px 0; } }
   .why-body-item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -932,6 +964,17 @@ header {
           -ms-flex-align: center;
               align-items: center;
       background-color: #000000; }
+      @media (max-width: 479.98px) {
+        .why-body-item__icon {
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 80px;
+             -moz-box-flex: 0;
+              -ms-flex: 0 0 80px;
+                  flex: 0 0 80px;
+          height: 80px;
+          padding: 15px; }
+          .why-body-item__icon img {
+            max-width: 100%; } }
     .why-body-item-body {
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 100%;
@@ -962,6 +1005,9 @@ header {
         text-transform: uppercase;
         letter-spacing: 2.5px;
         font-size: 25px; }
+        @media (max-width: 479.98px) {
+          .why-body-item-body__title {
+            font-size: 20px; } }
       .why-body-item-body__text {
         font-size: 15px;
         padding: 0 15px 0 0;
