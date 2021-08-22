@@ -1,0 +1,75 @@
+.why {
+
+  &-top {
+    @include flexbox();
+    background-color: #000;
+
+    &__column {
+      flex: 0 0 50%;
+    }
+
+    &__text {
+      color: #ffffff;
+      text-align: right;
+      font-family: "AkzidenzGroteskBQCondensedBold", sans-serif;
+      font-size: 50px;
+      line-height: 25px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      padding: 50px 60px 50px 0;
+    }
+
+    &__image {
+      height: 100%;
+    }
+  }
+
+  &-body {
+    padding: 50px 0 0 0;
+    background-color: #ebebeb;
+
+    &-row {
+      @include flexbox();
+      flex-wrap: wrap;
+    }
+
+    &__column {
+      flex: 0 0 50%;
+      margin: 0 0 50px 0;
+    }
+
+    &-item {
+      @include flexbox();
+
+      &__icon {
+        flex: 0 0 100px;
+        height: 100px;
+        @include flexbox();
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+      }
+
+      &-body {
+        flex: 1 1 100%;
+        @include flexbox();
+        flex-direction: column;
+        padding: 0 0 0 11px;
+
+        &__title {
+          flex: 1 1 auto;
+          font-family: "AkzidenzGroteskBQCondensedBold", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 2.5px;
+          font-size: 25px;
+        }
+
+        &__text {
+          font-size: 15px;
+          padding: 0 15px 0 0;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
