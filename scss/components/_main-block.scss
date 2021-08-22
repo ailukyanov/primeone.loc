@@ -1,0 +1,51 @@
+.private {
+  @include flexbox();
+  background-color: #000;
+
+  &__column {
+    flex: 0 0 50%;
+  }
+
+  &__image {
+    height: 100%;
+  }
+
+  &-body {
+    padding: 75px 0 75px 60px;
+
+    &-content {
+      max-width: 305px;
+    }
+
+    &__title {
+      font-family: "AkzidenzGroteskBQCondensedBold", sans-serif;
+      font-size: 50px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0 0 30px 0;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 25px;
+      color: #fff;
+      margin: 0 0 50px 0;
+    }
+
+    &-buttons {
+      @include flexbox();
+      align-items: center;
+
+      &__link {
+        font-family: "Bebas", sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 15px;
+        text-decoration: underline;
+        margin: 0 0 0 15px;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+}
