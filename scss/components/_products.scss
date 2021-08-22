@@ -1,0 +1,92 @@
+.products {
+  margin: 0 0 40px 0;
+
+  @media (max-width:$md2+px) {
+    margin: 0;
+  }
+
+  &-body {
+    @include flexbox();
+
+    @media (max-width:$md2+px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    flex: 0 0 25%;
+    margin: 0 0 40px 0;
+
+    @media (max-width:$md2+px) {
+      flex: 0 0 50%;
+    }
+
+    @media (max-width:380px) {
+      flex: 1 1 100%;
+    }
+  }
+
+  &-item {
+    @include flexbox();
+    height: 100%;
+    flex-direction: column;
+
+    &__image {
+      display: block;
+      /*padding: 0 0 100% 0;*/
+      margin: 0 0 25px 0;
+
+      @media (max-width:380px) {
+        margin: 0 0 15px 0;
+      }
+    }
+
+    &__title {
+      height: 50px;
+      overflow: hidden;
+      padding: 0 10px 0 0;
+      max-width: 185px;
+      display: block;
+      font-family: "AkzidenzGroteskBQCondensedBold", sans-serif;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #000;
+      font-size: 25px;
+      margin: 0 0 30px 0;
+
+      @media (max-width:380px) {
+        max-width: none;
+        height: auto;
+        overflow: visible;
+        margin: 0 0 20px 0;
+      }
+    }
+
+    &__text {
+      flex: 1 1 auto;
+      padding: 0 10px 0 0;
+      max-width: 185px;
+      font-size: 15px;
+      line-height: 25px;
+      margin: 0 0 25px 0;
+
+      @media (max-width:380px) {
+        max-width: none;
+        margin: 0 0 15px 0;
+      }
+    }
+
+    &__btn {
+      margin: 0 0 29px 0;
+    }
+
+    &__link {
+      font-family: "Bebas", sans-serif;
+      text-transform: uppercase;
+      color: #000;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      text-decoration: underline;
+    }
+  }
+}
