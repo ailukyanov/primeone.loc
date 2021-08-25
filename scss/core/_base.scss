@@ -163,6 +163,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
+
+  &.loaded {}
 }
 
 /*MAIN GRID*/
@@ -180,4 +182,3 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 10px;
   }
 }
-
