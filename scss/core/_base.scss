@@ -1,4 +1,4 @@
-/*Mixins*/
+/*--Mixins--*/
 @mixin anim($time, $delay) {
   transition: all $time ease $delay;
 }
@@ -40,8 +40,9 @@
 @mixin flexorder($val) {
   order: $val;
 }
+/*--*/
 
-/*CONNECTED FONTS*/
+/*--CONNECTED FONTS--*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 @font-face {
@@ -59,19 +60,22 @@
   font-weight: normal;
   font-style: normal;
 }
+/*--*/
 
-/*DEFAULT FONT*/
+/*--DEFAULT FONT--*/
 $fontfamily: "PT Sans";
+/*--*/
 
-/*VARIABLES*/
+/*--VARIABLES--*/
 $minwidth:320px;
 $mw:880;
 $md1:$mw+12;
 $md2:767.98;
 $md3:767.98;
 $md4:479.98;
+/*--*/
 
-/*RESET, COMMON PARAMETERS*/
+/*--RESET, COMMON PARAMETERS--*/
 * {
   padding: 0;
   margin: 0;
@@ -157,8 +161,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+/*--*/
 
-/*WRAPPER*/
+/*--WRAPPER--*/
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -166,8 +171,9 @@ h1, h2, h3, h4, h5, h6 {
 
   &.loaded {}
 }
+/*--*/
 
-/*MAIN GRID*/
+/*--MAIN GRID--*/
 .container {
   max-width: $mw+px;
   margin: 0 auto;
@@ -182,3 +188,4 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 10px;
   }
 }
+/*--*/

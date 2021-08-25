@@ -313,8 +313,9 @@ template {
 [hidden] {
   display: none; }
 
-/*Mixins*/
-/*CONNECTED FONTS*/
+/*--Mixins--*/
+/*--*/
+/*--CONNECTED FONTS--*/
 @font-face {
   font-family: 'AkzidenzGroteskBQCondensedBold';
   src: url("/fonts/AkzidenzGroteskBQCondensedBold.eot");
@@ -329,9 +330,12 @@ template {
   font-weight: normal;
   font-style: normal; }
 
-/*DEFAULT FONT*/
-/*VARIABLES*/
-/*RESET, COMMON PARAMETERS*/
+/*--*/
+/*--DEFAULT FONT--*/
+/*--*/
+/*--VARIABLES--*/
+/*--*/
+/*--RESET, COMMON PARAMETERS--*/
 * {
   padding: 0;
   margin: 0;
@@ -399,13 +403,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit; }
 
-/*WRAPPER*/
+/*--*/
+/*--WRAPPER--*/
 .wrapper {
   width: 100%;
   min-height: 100%;
   overflow: hidden; }
 
-/*MAIN GRID*/
+/*--*/
+/*--MAIN GRID--*/
 .container {
   max-width: 880px;
   margin: 0 auto;
@@ -418,10 +424,12 @@ h1, h2, h3, h4, h5, h6 {
       max-width: none;
       padding: 0 10px; } }
 
+/*--*/
 header {
   padding: 29px 0 33px 0;
   background-color: #fff;
-  /*MENU-BURGER*/ }
+  /*--MENU-BURGER--*/
+  /*--*/ }
   @media (max-width: 767.98px) {
     header {
       padding: 5px 0 5px 0; } }
@@ -661,7 +669,7 @@ header {
     header .header-menu__icon {
       top: 18px; } }
 
-/*BUTTONS*/
+/*--BUTTONS--*/
 .btn {
   height: 50px;
   line-height: 50px;
@@ -677,6 +685,7 @@ header {
     background-color: #ffffff;
     color: #000; }
 
+/*--*/
 .private {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1079,24 +1088,60 @@ header {
     display: -ms-flexbox;
     display: flex;
     font-size: 0;
-    background-color: #000; }
-    @media (max-width: 767.98px) {
+    background-color: #000;
+    /*--for js
+    @media (max-width: $md2+px) {
+      display: block;
+    }
+    --*/
+    /*--for not js--*/
+    /*--*/ }
+    @media (max-width: 999px) {
       .contacts-content {
-        display: block; } }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .contacts-content__column {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 50%;
          -moz-box-flex: 0;
           -ms-flex: 0 0 50%;
-              flex: 0 0 50%; }
+              flex: 0 0 50%;
+      /*--for not js--*/
+      /*--*/ }
+      @media (max-width: 1170px) {
+        .contacts-content__column {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1 1 50%;
+             -moz-box-flex: 1;
+              -ms-flex: 1 1 50%;
+                  flex: 1 1 50%; } }
     .contacts-content__map {
-      height: 100%; }
-      @media (max-width: 767.98px) {
-        .contacts-content__map {
-          height: 300px; } }
+      height: 100%;
+      /*--for js
+      @media (max-width: $md2+px) {
+        height: 300px;
+      }
+      --*/
+      /*--for not js--*/
+      /*--*/ }
+      @media (max-width: 999px) {
+        .contacts-content__map img {
+          width: 100%; } }
     .contacts-content-form {
-      padding: 55px 60px; }
-      @media (max-width: 767.98px) {
+      padding: 55px 60px;
+      /*--for js
+      @media (max-width: $md2+px) {
+        padding: 30px;
+      }
+      --*/
+      /*--for not js--*/
+      /*--*/ }
+      @media (max-width: 999px) {
         .contacts-content-form {
           padding: 30px; } }
       .contacts-content-form__title {
@@ -1107,8 +1152,15 @@ header {
         letter-spacing: 5px;
         margin: 0 0 30px 0; }
       .contacts-content-form-body {
-        max-width: 375px; }
-        @media (max-width: 767.98px) {
+        max-width: 375px;
+        /*--for js
+        @media (max-width: $md2+px) {
+          max-width: none;
+        }
+        --*/
+        /*--for not js--*/
+        /*--*/ }
+        @media (max-width: 999px) {
           .contacts-content-form-body {
             max-width: none; } }
         .contacts-content-form-body .input {
@@ -1117,7 +1169,7 @@ header {
                   border-radius: 0 !important;
           width: 100%;
           display: block;
-          padding: 0 18px;
+          padding: 9px 18px;
           height: 50px;
           border: 2px solid #959595;
           background-color: #252525;
@@ -1176,7 +1228,8 @@ footer .footer__text {
   line-height: 25px; }
   @media (max-width: 767.98px) {
     footer .footer__text {
-      text-align: center; } }
+      text-align: center;
+      font-size: 14px; } }
   footer .footer__text a {
     text-decoration: underline;
     color: #4d4d4d; }
