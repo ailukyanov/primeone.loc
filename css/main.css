@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/*------------------------------ <HELPERS> ------------------------------*/
+/*------------------------------ <MIXINS> ------------------------------*/
+/*------------------------------ </MIXINS> ------------------------------*/
+/*------------------------------ <VARIABLES> ------------------------------*/
+/*------------------------------ <DEFAULT FONT> ------------------------------*/
+/*------------------------------ </DEFAULT FONT> ------------------------------*/
+/*------------------------------ <SCREENS> ------------------------------*/
+/*------------------------------ </SCREENS> ------------------------------*/
+/*------------------------------ </VARIABLES> ------------------------------*/
+/*------------------------------ </HELPERS> ------------------------------*/
+/*------------------------------ <COMMON> ------------------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -313,9 +324,7 @@ template {
 [hidden] {
   display: none; }
 
-/*--Mixins--*/
-/*--*/
-/*--CONNECTED FONTS--*/
+/*------------------------------ <CONNECTED FONTS> ------------------------------*/
 @font-face {
   font-family: 'AkzidenzGroteskBQCondensedBold';
   src: url("/fonts/AkzidenzGroteskBQCondensedBold.eot");
@@ -330,12 +339,8 @@ template {
   font-weight: normal;
   font-style: normal; }
 
-/*--*/
-/*--DEFAULT FONT--*/
-/*--*/
-/*--VARIABLES--*/
-/*--*/
-/*--RESET, COMMON PARAMETERS--*/
+/*------------------------------ </CONNECTED FONTS> ------------------------------*/
+/*------------------------------ <RESET, COMMON PARAMETERS> ------------------------------*/
 * {
   padding: 0;
   margin: 0;
@@ -403,15 +408,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit; }
 
-/*--*/
-/*--WRAPPER--*/
+/*------------------------------ </RESET, COMMON PARAMETERS> ------------------------------*/
+/*------------------------------ <WRAPPER> ------------------------------*/
 .wrapper {
   width: 100%;
   min-height: 100%;
   overflow: hidden; }
 
-/*--*/
-/*--MAIN GRID--*/
+/*------------------------------ </WRAPPER> ------------------------------*/
+/*------------------------------ <MAIN GRID> ------------------------------*/
 .container {
   max-width: 880px;
   margin: 0 auto;
@@ -424,12 +429,15 @@ h1, h2, h3, h4, h5, h6 {
       max-width: none;
       padding: 0 10px; } }
 
-/*--*/
+/*------------------------------ </MAIN GRID> ------------------------------*/
+/*------------------------------ </COMMON> ------------------------------*/
+/*------------------------------ <MODULES> ------------------------------*/
+/*------------------------------ <HEADER> ------------------------------*/
 header {
   padding: 29px 0 33px 0;
   background-color: #fff;
-  /*--MENU-BURGER--*/
-  /*--*/ }
+  /*------------------------------ <MENU-BURGER> ------------------------------*/
+  /*------------------------------ </MENU-BURGER> ------------------------------*/ }
   @media (max-width: 767.98px) {
     header {
       padding: 5px 0 5px 0; } }
@@ -669,23 +677,8 @@ header {
     header .header-menu__icon {
       top: 18px; } }
 
-/*--BUTTONS--*/
-.btn {
-  height: 50px;
-  line-height: 50px;
-  background-color: #000;
-  display: inline-block;
-  padding: 0 33px;
-  font-size: 15px;
-  font-family: "Bebas", sans-serif;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 1.5px; }
-  .btn--w {
-    background-color: #ffffff;
-    color: #000; }
-
-/*--*/
+/*------------------------------ </HEADER> ------------------------------*/
+/*------------------------------ <PRIVATE> ------------------------------*/
 .private {
   display: -webkit-box;
   display: -webkit-flex;
@@ -762,6 +755,8 @@ header {
         margin: 0 0 0 15px;
         letter-spacing: 1.5px; }
 
+/*------------------------------ </PRIVATE> ------------------------------*/
+/*------------------------------ <PRODUCTS> ------------------------------*/
 .products {
   margin: 0 0 40px 0; }
   @media (max-width: 767.98px) {
@@ -865,6 +860,8 @@ header {
       letter-spacing: 1.5px;
       text-decoration: underline; }
 
+/*------------------------------ </PRODUCTS> ------------------------------*/
+/*------------------------------ <WHY> ------------------------------*/
 .why-top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1023,6 +1020,8 @@ header {
         padding: 0 15px 0 0;
         line-height: 25px; }
 
+/*------------------------------ </WHY> ------------------------------*/
+/*------------------------------ <CONTACTS> ------------------------------*/
 .contacts {
   padding: 80px 0 0 0; }
   @media (max-width: 767.98px) {
@@ -1089,13 +1088,13 @@ header {
     display: flex;
     font-size: 0;
     background-color: #000;
-    /*--for js
+    /*------------------------------ <For js> ------------------------------
     @media (max-width: $md2+px) {
       display: block;
     }
-    --*/
-    /*--for not js--*/
-    /*--*/ }
+    ------------------------------ </For js> ------------------------------*/
+    /*------------------------------ <For not js> ------------------------------*/
+    /*------------------------------ </For not js> ------------------------------*/ }
     @media (max-width: 999px) {
       .contacts-content {
         -webkit-box-orient: vertical;
@@ -1111,8 +1110,8 @@ header {
          -moz-box-flex: 0;
           -ms-flex: 0 0 50%;
               flex: 0 0 50%;
-      /*--for not js--*/
-      /*--*/ }
+      /*------------------------------ <For not js> ------------------------------*/
+      /*------------------------------ </For not js> ------------------------------*/ }
       @media (max-width: 1170px) {
         .contacts-content__column {
           -webkit-box-flex: 1;
@@ -1122,25 +1121,25 @@ header {
                   flex: 1 1 50%; } }
     .contacts-content__map {
       height: 100%;
-      /*--for js
+      /*------------------------------ <For js> ------------------------------
       @media (max-width: $md2+px) {
         height: 300px;
       }
-      --*/
-      /*--for not js--*/
-      /*--*/ }
+      ------------------------------ </For js> ------------------------------*/
+      /*------------------------------ <For not js> ------------------------------*/
+      /*------------------------------ </For not js> ------------------------------*/ }
       @media (max-width: 999px) {
         .contacts-content__map img {
           width: 100%; } }
     .contacts-content-form {
       padding: 55px 60px;
-      /*--for js
+      /*------------------------------ <For js> ------------------------------
       @media (max-width: $md2+px) {
         padding: 30px;
       }
-      --*/
-      /*--for not js--*/
-      /*--*/ }
+      ------------------------------ </For js> ------------------------------*/
+      /*------------------------------ <For not js> ------------------------------*/
+      /*------------------------------ </For not js> ------------------------------*/ }
       @media (max-width: 999px) {
         .contacts-content-form {
           padding: 30px; } }
@@ -1153,13 +1152,13 @@ header {
         margin: 0 0 30px 0; }
       .contacts-content-form-body {
         max-width: 375px;
-        /*--for js
+        /*------------------------------ <For js> ------------------------------
         @media (max-width: $md2+px) {
           max-width: none;
         }
-        --*/
-        /*--for not js--*/
-        /*--*/ }
+        ------------------------------ </For js> ------------------------------*/
+        /*------------------------------ <For not js> ------------------------------*/
+        /*------------------------------ </For not js> ------------------------------*/ }
         @media (max-width: 999px) {
           .contacts-content-form-body {
             max-width: none; } }
@@ -1178,6 +1177,8 @@ header {
       .contacts-content-form-line {
         margin: 0 0 25px 0; }
 
+/*------------------------------ </CONTACTS> ------------------------------*/
+/*------------------------------ <FOOTER> ------------------------------*/
 footer .footer-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1235,5 +1236,27 @@ footer .footer__text {
     color: #4d4d4d; }
     footer .footer__text a:hover {
       text-decoration: none; }
+
+/*------------------------------ </FOOTER> ------------------------------*/
+/*------------------------------ </MODULES> ------------------------------*/
+/*------------------------------ <COMPONENTS> ------------------------------*/
+/*------------------------------ <BUTTONS> ------------------------------*/
+.btn {
+  height: 50px;
+  line-height: 50px;
+  background-color: #000;
+  display: inline-block;
+  padding: 0 33px;
+  font-size: 15px;
+  font-family: "Bebas", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1.5px; }
+  .btn--w {
+    background-color: #ffffff;
+    color: #000; }
+
+/*------------------------------ </BUTTONS> ------------------------------*/
+/*------------------------------ </COMPONENTS> ------------------------------*/
 
 /*# sourceMappingURL=main.css.map */

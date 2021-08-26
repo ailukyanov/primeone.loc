@@ -1,9 +1,23 @@
-@import "core/normalize";
-@import "core/base";
-@import "components/header";
+/*------------------------------ <HELPERS> ------------------------------*/
+@import "helpers/mixins";
+@import "helpers/variables";
+/*------------------------------ </HELPERS> ------------------------------*/
+
+/*------------------------------ <COMMON> ------------------------------*/
+@import "common/normalize";
+@import "common/fonts";
+@import "common/base";
+/*------------------------------ </COMMON> ------------------------------*/
+
+/*------------------------------ <MODULES> ------------------------------*/
+@import "modules/header";
+@import "modules/private";
+@import "modules/products";
+@import "modules/why";
+@import "modules/contacts";
+@import "modules/footer";
+/*------------------------------ </MODULES> ------------------------------*/
+
+/*------------------------------ <COMPONENTS> ------------------------------*/
 @import "components/buttons";
-@import "components/private";
-@import "components/products";
-@import "components/why";
-@import "components/contacts";
-@import "components/footer";
+/*------------------------------ </COMPONENTS> ------------------------------*/
